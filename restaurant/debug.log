@@ -1,0 +1,200 @@
+2026-03-02 00:41:17,053 - ERROR - Internal Server Error: /log_in/
+Traceback (most recent call last):
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Sipa2\restaurant\core\views.py", line 188, in log_in
+    return render(request,'accounts/login.html',{'next':next})
+  File "D:\Sipa2\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 585, in parse
+    raise self.error(token, e)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\defaulttags.py", line 1565, in url
+    viewname = parser.compile_filter(bits[1])
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 676, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 776, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Template: D:\Sipa2\restaurant\core\templates\accounts\login.html, Could not parse the remainder: ''github-oauth2'' from ''social:begin''github-oauth2''
+2026-03-02 00:41:17,069 - ERROR - "GET /log_in/ HTTP/1.1" 500 178829
+2026-03-02 00:41:37,227 - ERROR - Internal Server Error: /log_in/
+Traceback (most recent call last):
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Sipa2\restaurant\core\views.py", line 188, in log_in
+    return render(request,'accounts/login.html',{'next':next})
+  File "D:\Sipa2\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 585, in parse
+    raise self.error(token, e)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\defaulttags.py", line 1565, in url
+    viewname = parser.compile_filter(bits[1])
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 676, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 776, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Template: D:\Sipa2\restaurant\core\templates\accounts\login.html, Could not parse the remainder: ''google-oauth2'' from ''social:begin''google-oauth2''
+2026-03-02 00:41:37,232 - ERROR - "GET /log_in/ HTTP/1.1" 500 179094
+2026-03-02 00:41:39,202 - ERROR - Internal Server Error: /log_in/
+Traceback (most recent call last):
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Sipa2\restaurant\core\views.py", line 188, in log_in
+    return render(request,'accounts/login.html',{'next':next})
+  File "D:\Sipa2\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 585, in parse
+    raise self.error(token, e)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\defaulttags.py", line 1565, in url
+    viewname = parser.compile_filter(bits[1])
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 676, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 776, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Template: D:\Sipa2\restaurant\core\templates\accounts\login.html, Could not parse the remainder: ''google-oauth2'' from ''social:begin''google-oauth2''
+2026-03-02 00:41:39,205 - ERROR - "GET /log_in/ HTTP/1.1" 500 178966
+2026-03-02 00:41:40,618 - ERROR - Internal Server Error: /log_in/
+Traceback (most recent call last):
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Sipa2\restaurant\core\views.py", line 188, in log_in
+    return render(request,'accounts/login.html',{'next':next})
+  File "D:\Sipa2\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 585, in parse
+    raise self.error(token, e)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\defaulttags.py", line 1565, in url
+    viewname = parser.compile_filter(bits[1])
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 676, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Sipa2\myenv\Lib\site-packages\django\template\base.py", line 776, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Template: D:\Sipa2\restaurant\core\templates\accounts\login.html, Could not parse the remainder: ''google-oauth2'' from ''social:begin''google-oauth2''
+2026-03-02 00:41:40,621 - ERROR - "GET /log_in/ HTTP/1.1" 500 178966
